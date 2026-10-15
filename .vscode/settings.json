@@ -1,0 +1,5 @@
+{
+    "C_Cpp.default.compileCommands": "/workspaces/Waffle/builddir/compile_commands.json",
+    "C_Cpp.default.configurationProvider": "mesonbuild.mesonbuild",
+    "mesonbuild.configureOnOpen": true
+}
