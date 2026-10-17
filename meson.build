@@ -9,12 +9,13 @@ project(
 
 include = include_directories('include')
 
-# I don't think I'll use fmt, but I think I should learn this for when i eventually include ixwebsockets and volk or something
-fmt_dep = dependency('fmt')
+#using wrapper to save time on download configurations
+asio_dep = dependency('asio')
+crow_dep = dependency('Crow')
 
 executable(
     'waffle', 
-    ['main.cpp', 'src/test.cpp'], 
+    ['main.cpp', 'src/crowMain.cpp'], 
     include_directories: include,
-    dependencies: [fmt_dep]
+    dependencies: [crow_dep, asio_dep]
 )
