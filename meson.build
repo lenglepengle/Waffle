@@ -22,7 +22,7 @@ vma_dep = dependency('VulkanMemoryAllocator')
 
 executable(
     'waffle', 
-    ['main.cpp', 'src/waffle.cpp'], 
+    ['main.cpp', 'src/waffle.cpp', 'src/application.cpp'], 
     include_directories: include,
     dependencies: [sdl3_dep, sdl3_image_dep, glm_dep, shaderc_dep, volk_dep]
 )
