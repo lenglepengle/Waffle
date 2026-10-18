@@ -9,13 +9,12 @@ project(
 
 include = include_directories('include')
 
-#using wrapper to save time on download configurations
-asio_dep = dependency('asio')
-crow_dep = dependency('Crow')
+sdl3_dep = dependency('sdl3')
+sdl3_image_dep = dependency('sdl3_image')
 
 executable(
     'waffle', 
-    ['main.cpp', 'src/crowMain.cpp'], 
+    ['main.cpp', 'src/waffle.cpp'], 
     include_directories: include,
-    dependencies: [crow_dep, asio_dep]
+    dependencies: [sdl3_dep, sdl3_image_dep]
 )
