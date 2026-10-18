@@ -1,4 +1,4 @@
-//following https://docs.vulkan.org/tutorial/latest/03_Drawing_a_triangle/00_Setup/00_Base_code.html
+//following https://www.youtube.com/watch?v=DC9FBRQKNck
 //not sure why he uses h instead of hpp, but I'll use hpp
 #include "waffle.hpp"
 
