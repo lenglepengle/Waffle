@@ -6,13 +6,11 @@
 	"image": "mcr.microsoft.com/devcontainers/universal:6-linux",
 	"features": {
 		"ghcr.io/devcontainers/features/desktop-lite:1": {
-			"version": "latest",
-			"noVncVersion": "1.6.0",
-			"password": "noPassword",
-			"webPort": "6080",
-			"vncPort": "5901"
+			"version": "latest"
 		}
-	}
+	},
+	//"containerEnv": { "XDG_RUNTIME_DIR": "/tmp/runtime-codespace" },
+	//"postCreateCommand": "mkdir -p /tmp/runtime-codespace && chmod 700 /tmp/runtime-codespace"
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
